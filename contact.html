@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Edouard Razafi Parquetteur</title>
+    <meta name="description" content="Contactez Edouard Razafi Parquetteur pour un devis gratuit. Intervention sur toute l'Île-de-France.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Navigation -->
+    <header class="navbar navbar--scrolled" id="navbar">
+        <div class="container navbar__inner">
+            <a href="index.html" class="navbar__logo">Edouard Razafi</a>
+            <nav class="navbar__nav" id="navMenu">
+                <ul class="navbar__list">
+                    <li><a href="index.html" class="navbar__link">Accueil</a></li>
+                    <li><a href="services.html" class="navbar__link">Services</a></li>
+                    <li><a href="contact.html" class="navbar__link">Contact</a></li>
+                    <li><a href="contact.html" class="navbar__link navbar__link--cta">Devis Gratuit</a></li>
+                </ul>
+            </nav>
+            <button class="navbar__hamburger" id="hamburger" aria-label="Ouvrir le menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Contactez-nous</h1>
+            <p>Demandez votre devis gratuit ou posez-nous vos questions</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section">
+        <div class="container">
+            <div class="contact-grid">
+
+                <!-- Form -->
+                <div>
+                    <h2 style="margin-bottom: 24px;">Envoyez-nous un message</h2>
+                    <form id="contactForm" novalidate>
+                        <div class="form__group">
+                            <label class="form__label" for="name">Nom complet *</label>
+                            <input class="form__input" type="text" id="name" name="name" placeholder="Votre nom" required>
+                            <p class="form__error">Veuillez entrer votre nom.</p>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="email">Email *</label>
+                            <input class="form__input" type="email" id="email" name="email" placeholder="votre@email.fr" required>
+                            <p class="form__error">Veuillez entrer une adresse email valide.</p>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="phone">Téléphone</label>
+                            <input class="form__input" type="tel" id="phone" name="phone" placeholder="06 XX XX XX XX">
+                            <p class="form__error">Veuillez entrer un numéro de téléphone valide.</p>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="subject">Sujet *</label>
+                            <select class="form__select" id="subject" name="subject" required>
+                                <option value="">-- Choisissez un sujet --</option>
+                                <option value="devis">Demande de devis</option>
+                                <option value="pose">Pose de parquet</option>
+                                <option value="renovation">Rénovation</option>
+                                <option value="poncage">Ponçage / Vitrification</option>
+                                <option value="entretien">Entretien / Réparation</option>
+                                <option value="autre">Autre</option>
+                            </select>
+                            <p class="form__error">Veuillez sélectionner un sujet.</p>
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="message">Message *</label>
+                            <textarea class="form__textarea" id="message" name="message" placeholder="Décrivez votre projet..." required></textarea>
+                            <p class="form__error">Veuillez entrer votre message.</p>
+                        </div>
+
+                        <button type="submit" class="btn btn--primary">Envoyer le message</button>
+                    </form>
+
+                    <div class="form__success" id="formSuccess">
+                        Merci pour votre message ! Nous vous répondrons dans les plus brefs délais.
+                    </div>
+                </div>
+
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 style="margin-bottom: 24px;">Informations pratiques</h2>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">&#9993;</div>
+                        <div class="contact-info__text">
+                            <h4>Email</h4>
+                            <p>contact@razafi-parquet.fr</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">&#9742;</div>
+                        <div class="contact-info__text">
+                            <h4>Téléphone</h4>
+                            <p>06 XX XX XX XX</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">&#9873;</div>
+                        <div class="contact-info__text">
+                            <h4>Adresse</h4>
+                            <p>Région parisienne<br>Île-de-France</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-info__item">
+                        <div class="contact-info__icon">&#9200;</div>
+                        <div class="contact-info__text">
+                            <h4>Horaires</h4>
+                            <p>Lundi – Vendredi : 8h00 – 18h00<br>Samedi : 9h00 – 13h00<br>Dimanche : Fermé</p>
+                        </div>
+                    </div>
+
+                    <div class="map-placeholder">
+                        <p>Carte Google Maps — à intégrer</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer__inner">
+            <div class="footer__col">
+                <h4>Edouard Razafi</h4>
+                <p>Artisan parquetteur en Île-de-France. Pose, rénovation et entretien de vos parquets avec passion et savoir-faire.</p>
+            </div>
+            <div class="footer__col">
+                <h4>Navigation</h4>
+                <ul class="footer__links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer__col">
+                <h4>Contact</h4>
+                <p>Région parisienne, Île-de-France</p>
+                <p>Tél : 06 XX XX XX XX</p>
+                <p>Email : contact@razafi-parquet.fr</p>
+            </div>
+        </div>
+        <div class="footer__bottom">
+            <div class="container">
+                <p>&copy; 2026 Edouard Razafi Parquetteur. Tous droits réservés.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
